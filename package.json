@@ -1,0 +1,28 @@
+{
+  "name": "okkult-circuits",
+  "version": "0.1.0",
+  "description": "ZK circuits for Okkult Protocol",
+  "scripts": {
+    "compile": "chmod +x scripts/compile.sh && ./scripts/compile.sh",
+    "setup":   "chmod +x scripts/setup.sh && ./scripts/setup.sh",
+    "export":  "chmod +x scripts/export.sh && ./scripts/export.sh",
+    "build":   "npm run compile && npm run setup && npm run export",
+    "test":    "mocha test/*.test.js --timeout 120000 --exit"
+  },
+  "dependencies": {
+    "circomlibjs": "^0.1.7",
+    "merkletreejs": "^0.3.11",
+    "snarkjs":      "^0.7.0"
+  },
+  "devDependencies": {
+    "chai":   "^4.3.10",
+    "mocha":  "^10.2.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url":  "https://github.com/okkult-dev/okkult-circuits"
+  },
+  "homepage": "https://okkult.io",
+  "author":   "Okkult Protocol"
+}
