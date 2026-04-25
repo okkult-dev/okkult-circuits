@@ -1,0 +1,20 @@
+# Circuit build output
+build/
+
+# Proving keys — too large for git
+# Download via scripts/setup.sh
+keys/
+
+# Powers of Tau ceremony files
+ptau/
+
+# Node
+node_modules/
+
+# Circom artifacts
+*.r1cs
+*.sym
+
+# Temp files
+*.tmp
+.DS_Store
